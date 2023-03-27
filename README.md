@@ -1,28 +1,38 @@
 # Genetic algorithm
-Genetic algorithms use principles and terminology borrowed from the biological science of genetics. In a genetic algorithm, each individual represents a potential solution to some problem. In a classical genetic algorithm, an individual is encoded by a string of binary characters - a chromosome, each bit of which is called a gene. A set of individuals – potential solutions – makes up a population. The search for a (sub)optimal solution to a problem is carried out in the process of population evolution - the sequential transformation of one finite set of solutions into another using the genetic operators: 
-* Reproduction;
-* Crossing over; 
-* Mutation.  
-## Algorithm:  
-![algorithm](resources/genetic-algorithm.png) 
 
-## Task 1: 
+Genetic algorithms use principles and terminology borrowed from the biological science of genetics. In a genetic algorithm, each individual represents a potential solution to some problem. In a classical genetic algorithm, an individual is encoded by a string of binary characters - a chromosome, each bit of which is called a gene. A set of individuals – potential solutions – makes up a population. The search for a (sub)optimal solution to a problem is carried out in the process of population evolution - the sequential transformation of one finite set of solutions into another using the genetic operators:  
+
+* Reproduction
+* Crossing over
+* Mutation
+
+## Algorithm
+
+![algorithm](resources/genetic-algorithm.png)  
+
+## Task 1
+
 Find the extremum of the function:  
-```
+
+```txt
 f(x) = cos(x)/ (1+exp(-x)); xϵ[0.5,10]  
 ```
+
 Solution:  
-```
+
+```txt
 # genetic algorithm constants
 POPULATION_SIZE = 30    # number of individuals in a population
 P_CROSSOVER = 0.5       # probability of crossing
 P_MUTATION = 0.2        # individual's mutation probability
 MAX_GENERATIONS = 20    # maximum number of generations
 ```
+
 Result:  
-![task1-result](resources/task1-result.png) 
-Output:   
-```
+![task1-result](resources/task1-result.png)  
+Output:  
+
+```txt
    	      	          extremum_individs           	                    stats                     
    	      	--------------------------------------	----------------------------------------------
 gen	nevals	extremum_individ      	gen	nevals	avg      	gen	max     	nevals
@@ -49,21 +59,27 @@ gen	nevals	extremum_individ      	gen	nevals	avg      	gen	max     	nevals
 20 	21    	[[6.286275738508809]] 	20 	21    	0.993089  	20 	0.998137	21  
 ```
 
-## Task 2: 
+## Task 2
+
 Find the extremum of the function:  
-```
+
+```txt
 f(x) = 3x3^2; xϵ[-5,5]  
 ```
+
 Solution:  
-```
+
+```txt
 # genetic algorithm constants
 POPULATION_SIZE = 30    # number of individuals in a population
 P_CROSSOVER = 0.5       # probability of crossing
 P_MUTATION = 0.2        # individual's mutation probability
 MAX_GENERATIONS = 20    # maximum number of generations
 ```
+
 Result:  
-![task2-result](resources/task2-result.png) 
+![task2-result](resources/task2-result.png)  
+
 Output:  
 ```
    	      	          extremum_individs           	                stats                 
